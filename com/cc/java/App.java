@@ -7,8 +7,11 @@ public class App {
 		String [] catNames = {"Grizabella","Alonzo","RumTumTugger","Suzanne"};
 		String [] dogNames = {"Fifi","Boo","Cassie","Bonzo"};
 
-
-
+        Cat cat = new Cat(catNames[0]);
+        output(cat.petSounds());
+        
+        Dog dog = new Dog(dogNames[0]);
+        output(dog.petSounds());
 	}
 
     private static void output(String outputStr) {
