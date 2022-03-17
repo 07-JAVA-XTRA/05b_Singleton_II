@@ -28,8 +28,26 @@ public class Controller {
     private ArrayList<Dog> dogsL;
     private Random random;
 
+   public void addNewCat(String name) {
+       catsL.add(new Cat(name));
+   }
    
-   
+   public void addNewDog(String name){
+        dogsL.add(new Dog(name));
+    }
+
+    public Cat getRandomCat() {
+        return catsL.get(1);
+    }
+
+    public Dog getRandomDog() {
+        return dogsL.get(0);
+    }
+
+
+
+
+    
     
 
 }

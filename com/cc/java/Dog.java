@@ -3,9 +3,11 @@ package com.cc.java;
 public class Dog extends Pet{
 
     private String name;
+    private Controller controller;
 
     public Dog(String name) {
         this.name = name;
+        this.controller = Controller.getInstance();
     }
 
     @Override
@@ -14,10 +16,11 @@ public class Dog extends Pet{
     }
 
 
-    public String toString() {
-        return "Mein Name ist " + this.name;
+    public String askACat() {
+        return controller.getRandomCat().getName();
     }
 
+   
     
     
 }
