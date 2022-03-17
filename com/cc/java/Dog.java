@@ -1,6 +1,6 @@
 package com.cc.java;
 
-public class Dog extends Pet{
+public class Dog extends Pet {
 
     private String name;
     private Controller controller;
@@ -15,12 +15,8 @@ public class Dog extends Pet{
         return name + " says: Bark!";
     }
 
-
     public String askACat() {
-        return controller.getRandomCat().getName();
+        return controller.getRandomCat().getName(this, name);
     }
 
-   
-    
-    
 }
